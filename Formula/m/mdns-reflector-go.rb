@@ -12,7 +12,7 @@ class MdnsReflectorGo < Formula
     end
   
     test do
-      assert_match "-ifaces", shell_output("#{bin}/mdns-reflector-go --help")
+      assert_match "-ifaces", shell_output("#{bin}/mdns-reflector-go --help 2>&1")
     end
   end
   
